@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTrackr - Discover, Track, and Review Books</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BookTrackr</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ulasan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Daftar</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3 mx-2" href="register.html">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section py-5 text-center text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Temukan, Koleksi, Analisis Buku Anda</h1>
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="col-md-3 mb-3">
+                            <div class="counter-box">
+                                <h2 class="counter-number">12.5jt</h2>
+                                <p class="counter-label">Buku Dibaca</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="counter-box">
+                                <h2 class="counter-number">1.2jt</h2>
+                                <p class="counter-label">Buku</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="counter-box">
+                                <h2 class="counter-number">8.7jt</h2>
+                                <p class="counter-label">Penilaian</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="counter-box">
+                                <h2 class="counter-number">1.6jt</h2>
+                                <p class="counter-label">Ulasan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="register.html" class="btn btn-lg btn-primary px-4 py-2 mb-2">Buat Akun Gratis</a>
+                    <p class="mt-2">atau <a href="login.html" class="text-white">masuk</a> jika sudah memiliki akun</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trending Books Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Trending Saat Ini</h2>
+            <div class="row">
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+1" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">Atomic Habits</h5>
+                            <p class="book-author small text-muted">James Clear</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+2" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">Sapiens</h5>
+                            <p class="book-author small text-muted">Yuval Noah Harari</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+3" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">Project Hail Mary</h5>
+                            <p class="book-author small text-muted">Andy Weir</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+4" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">Fourth Wing</h5>
+                            <p class="book-author small text-muted">Rebecca Yarros</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+5" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">Dune</h5>
+                            <p class="book-author small text-muted">Frank Herbert</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <a href="book-detail.html" class="text-decoration-none">
+                            <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Buku+6" class="img-fluid rounded"
+                                alt="Book Cover">
+                            <h5 class="book-title mt-2">The Alchemist</h5>
+                            <p class="book-author small text-muted">Paulo Coelho</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">Apa Itu BookTrackr?</h2>
+                    <p class="lead mb-4">BookTrackr adalah tempat untuk melacak koleksi buku Anda secara virtual.
+                        Perbarui daftar bacaan Anda, beri peringkat buku yang telah Anda baca, dan tambahkan buku yang
+                        akan datang ke wishlist Anda. Bagikan perjalanan membaca Anda dengan teman-teman dengan saling
+                        mengikuti untuk tetap up-to-date tentang sesi membaca terbaru Anda.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://placehold.co/600x400/3d405b/FFFFFF?text=BookTrackr+Profile"
+                        class="img-fluid rounded shadow" alt="BookTrackr Profile Preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="section-title mb-3">Lacak Koleksi Buku Pribadi Anda</h2>
+                    <p class="lead">Catat buku apa saja yang telah Anda baca, sedang Anda baca, dan ingin Anda baca.
+                        Berikan detail sebanyak yang Anda inginkan dengan fitur seperti pelacakan waktu, jurnal harian,
+                        kepemilikan edisi dan banyak lagi.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="https://placehold.co/600x400/3d405b/FFFFFF?text=Book+Collection"
+                        class="img-fluid rounded shadow" alt="Book Collection Feature">
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">Ekspresikan Pemikiran Anda dengan Ulasan</h2>
+                    <p class="lead">Lihat apa yang semua orang pikirkan dengan ulasan. Setiap buku memiliki peringkat
+                        rata-rata yang terdiri dari peringkat semua orang untuk memberi Anda skor kualitas dengan
+                        sekilas. Kemudian setelah Anda siap, tambahkan ulasan Anda untuk menentukan apa arti buku itu
+                        bagi Anda.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://placehold.co/600x400/3d405b/FFFFFF?text=Book+Review"
+                        class="img-fluid rounded shadow" alt="Book Review Feature">
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="section-title mb-3">Pantau Perkembangan Terbaru dari Teman</h2>
+                    <p class="lead">Ikuti orang lain untuk mendapatkan feed aktivitas all-in-one yang akan memberi Anda
+                        informasi tentang progres membaca terbaru mereka. Buku, ulasan, dan daftar dari teman muncul
+                        langsung di halaman beranda Anda sehingga Anda tidak melewatkan apapun.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="https://placehold.co/600x400/3d405b/FFFFFF?text=Friend+Activity"
+                        class="img-fluid rounded shadow" alt="Friend Activity Feature">
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">Buat dan Organisasikan Buku dengan Daftar</h2>
+                    <p class="lead">Daftar memungkinkan Anda membuat koleksi buku kustom dengan opsi seperti melacak
+                        progres Anda atau mengaktifkan peringkat. Anda kemudian dapat memutuskan untuk membagikan daftar
+                        Anda dengan komunitas atau menyimpannya secara pribadi untuk diri sendiri.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://placehold.co/600x400/3d405b/FFFFFF?text=Book+Lists"
+                        class="img-fluid rounded shadow" alt="Book Lists Feature">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Reviews Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title mb-0">Ulasan Populer</h2>
+                <a href="#" class="btn btn-link">Lihat Semua</a>
+            </div>
+
+            <div class="row">
+                <!-- Review 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://placehold.co/70x100/3d405b/FFFFFF?text=Book"
+                                    class="review-book-cover me-3" alt="Book Cover">
+                                <div>
+                                    <h5 class="card-title mb-1">Educated</h5>
+                                    <p class="text-muted mb-1">Tara Westover</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                        <span class="small">4.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-user d-flex align-items-center mb-3">
+                                <img src="https://placehold.co/40x40/3d405b/FFFFFF?text=User"
+                                    class="rounded-circle me-2" alt="User">
+                                <div>
+                                    <p class="fw-bold mb-0">BookLover123</p>
+                                    <p class="text-muted small mb-0">Selesai · 12 Maret 2024</p>
+                                </div>
+                            </div>
+                            <p class="card-text review-content">Kisah yang luar biasa tentang pendidikan dan menentang
+                                ekspektasi. Buku ini mengubah cara saya melihat dunia dan nilai dari usaha keras.
+                                Ceritanya menarik dari awal hingga akhir, dan saya sangat merekomendasikannya untuk
+                                semua orang.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary me-2"><i
+                                            class="far fa-heart me-1"></i> 87</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                            class="far fa-comment me-1"></i> 12</a>
+                                </div>
+                                <a href="#" class="btn btn-link">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://placehold.co/70x100/3d405b/FFFFFF?text=Book"
+                                    class="review-book-cover me-3" alt="Book Cover">
+                                <div>
+                                    <h5 class="card-title mb-1">The Midnight Library</h5>
+                                    <p class="text-muted mb-1">Matt Haig</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                        <span class="small">4.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-user d-flex align-items-center mb-3">
+                                <img src="https://placehold.co/40x40/3d405b/FFFFFF?text=User"
+                                    class="rounded-circle me-2" alt="User">
+                                <div>
+                                    <p class="fw-bold mb-0">ReadingAddict</p>
+                                    <p class="text-muted small mb-0">Selesai · 5 April 2024</p>
+                                </div>
+                            </div>
+                            <p class="card-text review-content">Konsep yang brilian tentang perpustakaan antar dimensi
+                                yang berisi semua kehidupan yang mungkin Anda jalani. Ceritanya membuat saya merenung
+                                tentang pilihan hidup dan penyesalan. Sangat direkomendasikan untuk siapa saja yang
+                                mencari bacaan filosofis yang ringan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary me-2"><i
+                                            class="far fa-heart me-1"></i> 63</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                            class="far fa-comment me-1"></i> 8</a>
+                                </div>
+                                <a href="#" class="btn btn-link">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Lists Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Daftar Populer</h2>
+            <div class="row">
+                <!-- List 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card list-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Buku Terbaik Fiksi Ilmiah 2024</h5>
+                            <p class="card-text text-muted mb-3">oleh SciFiLover · 42 Buku</p>
+                            <div class="d-flex flex-wrap list-preview">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=1"
+                                    class="list-book-cover me-2 mb-2" alt="Book 1">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=2"
+                                    class="list-book-cover me-2 mb-2" alt="Book 2">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=3"
+                                    class="list-book-cover me-2 mb-2" alt="Book 3">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=4"
+                                    class="list-book-cover me-2 mb-2" alt="Book 4">
+                                <div class="list-book-more d-flex justify-content-center align-items-center">
+                                    <span>+38</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Lihat Daftar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card list-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Must-Read Karya Penulis Indonesia</h5>
+                            <p class="card-text text-muted mb-3">oleh LiterasiLokal · 28 Buku</p>
+                            <div class="d-flex flex-wrap list-preview">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=1"
+                                    class="list-book-cover me-2 mb-2" alt="Book 1">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=2"
+                                    class="list-book-cover me-2 mb-2" alt="Book 2">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=3"
+                                    class="list-book-cover me-2 mb-2" alt="Book 3">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=4"
+                                    class="list-book-cover me-2 mb-2" alt="Book 4">
+                                <div class="list-book-more d-flex justify-content-center align-items-center">
+                                    <span>+24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Lihat Daftar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card list-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Klasik Sastra yang Harus Dibaca</h5>
+                            <p class="card-text text-muted mb-3">oleh BookClassics · 35 Buku</p>
+                            <div class="d-flex flex-wrap list-preview">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=1"
+                                    class="list-book-cover me-2 mb-2" alt="Book 1">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=2"
+                                    class="list-book-cover me-2 mb-2" alt="Book 2">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=3"
+                                    class="list-book-cover me-2 mb-2" alt="Book 3">
+                                <img src="https://placehold.co/60x90/3d405b/FFFFFF?text=4"
+                                    class="list-book-cover me-2 mb-2" alt="Book 4">
+                                <div class="list-book-more d-flex justify-content-center align-items-center">
+                                    <span>+31</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Lihat Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Books Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title mb-0">Segera Terbit</h2>
+                <a href="#" class="btn btn-link">Lihat Semua</a>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">Nevernight Chronicles 4</h5>
+                        <p class="book-author small text-muted">Jay Kristoff</p>
+                        <p class="book-date small">30 Juni</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">The Last Word</h5>
+                        <p class="book-author small text-muted">Taylor Jenkins Reid</p>
+                        <p class="book-date small">15 Mei</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">Kingdom of Ash and Fire</h5>
+                        <p class="book-author small text-muted">Sarah J. Maas</p>
+                        <p class="book-date small">12 Juli</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">The Lost City</h5>
+                        <p class="book-author small text-muted">Brandon Sanderson</p>
+                        <p class="book-date small">20 Agustus</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">Midnight Echoes</h5>
+                        <p class="book-author small text-muted">V.E. Schwab</p>
+                        <p class="book-date small">5 September</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="book-card">
+                        <img src="https://placehold.co/200x300/3d405b/FFFFFF?text=Coming+Soon" class="img-fluid rounded"
+                            alt="Book Cover">
+                        <h5 class="book-title mt-2">The Crown of Shadows</h5>
+                        <p class="book-author small text-muted">Leigh Bardugo</p>
+                        <p class="book-date small">18 Oktober</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Mulai Lacak Perjalanan Membaca Anda</h2>
+                    <p class="lead mb-4">Bergabunglah dengan ribuan pembaca lainnya yang mengelola koleksi buku mereka
+                        dan menemukan buku-buku baru untuk dibaca.</p>
+                    <a href="register.html" class="btn btn-lg btn-light">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>BookTrackr</h5>
+                    <p class="text-muted">Temukan, lacak, dan ulas buku Anda.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Tautan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted">Beranda</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Buku</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Ulasan</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Daftar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Sumber</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted">Tentang</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Kontak</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Berlangganan</h5>
+                    <p class="text-muted">Dapatkan rekomendasi buku baru dan berita terbaru.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Anda">
+                            <button class="btn btn-primary" type="submit">Berlangganan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2024 BookTrackr. Semua hak dilindungi.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline small mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-muted">Ketentuan</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Privasi</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Cookie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
